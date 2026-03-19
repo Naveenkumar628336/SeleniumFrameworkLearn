@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Suite"
+       parallel="methods"
+       thread-count="3"
+       verbose="1">
+
+    <!-- Listener attached here — works for ALL tests -->
+    <listeners>
+        <listener class-name=
+            "com.automationlearn.listeners.TestListener"/>
+    </listeners>
+
+    <test name="SauceDemo Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name=
+                "com.automationlearn.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="The Internet Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name=
+                "com.automationlearn.tests.TheInternetTest"/>
+        </classes>
+    </test>
+
+    <test name="DemoQA Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name=
+                "com.automationlearn.tests.DemoQATest"/>
+        </classes>
+    </test>
+
+    <test name="OrangeHRM Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name=
+                "com.automationlearn.tests.OrangeHRMTest"/>
+        </classes>
+    </test>
+
+</suite>

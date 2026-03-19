@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="22" passed="21" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-17T09:53:14 IST" name="Automation Suite" finished-at="2026-03-17T09:55:14 IST" duration-ms="119222">
+    <groups>
+    </groups>
+    <test started-at="2026-03-17T09:53:14 IST" name="SauceDemo Tests" finished-at="2026-03-17T09:53:33 IST" duration-ms="18899">
+      <class name="com.automationlearn.tests.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.LoginTest@515c6049]" started-at="2026-03-17T09:53:14 IST" name="setup" finished-at="2026-03-17T09:53:20 IST" duration-ms="5482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.LoginTest@515c6049]" started-at="2026-03-17T09:53:14 IST" name="setup" finished-at="2026-03-17T09:53:20 IST" duration-ms="5482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.LoginTest@515c6049]" started-at="2026-03-17T09:53:14 IST" name="setup" finished-at="2026-03-17T09:53:20 IST" duration-ms="5481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInvalidLogin()[pri:0, instance:com.automationlearn.tests.LoginTest@515c6049]" started-at="2026-03-17T09:53:20 IST" name="testInvalidLogin" description="Login with wrong password shows error" finished-at="2026-03-17T09:53:22 IST" duration-ms="2089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method signature="testEmptyUsername()[pri:0, instance:com.automationlearn.tests.LoginTest@515c6049]" started-at="2026-03-17T09:53:20 IST" name="testEmptyUsername" description="Login with empty username shows error" finished-at="2026-03-17T09:53:22 IST" duration-ms="2082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyUsername -->
+        <test-method signature="testAddToCart()[pri:0, instance:com.automationlearn.tests.LoginTest@515c6049]" started-at="2026-03-17T09:53:20 IST" name="testAddToCart" description="Login and add product to cart" finished-at="2026-03-17T09:53:32 IST" duration-ms="12542" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Cart count should be 1 after adding product! expected [1] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Cart count should be 1 after adding product! expected [1] but found [0]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.automationlearn.tests.LoginTest.testAddToCart(LoginTest.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.LoginTest@515c6049]" started-at="2026-03-17T09:53:22 IST" name="teardown" finished-at="2026-03-17T09:53:23 IST" duration-ms="488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.LoginTest@515c6049]" started-at="2026-03-17T09:53:22 IST" name="teardown" finished-at="2026-03-17T09:53:23 IST" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.LoginTest@515c6049]" started-at="2026-03-17T09:53:23 IST" name="setup" finished-at="2026-03-17T09:53:24 IST" duration-ms="1412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testValidLogin()[pri:0, instance:com.automationlearn.tests.LoginTest@515c6049]" started-at="2026-03-17T09:53:24 IST" name="testValidLogin" description="Login with valid credentials" finished-at="2026-03-17T09:53:26 IST" duration-ms="1688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.LoginTest@515c6049]" started-at="2026-03-17T09:53:26 IST" name="teardown" finished-at="2026-03-17T09:53:26 IST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.LoginTest@515c6049]" started-at="2026-03-17T09:53:33 IST" name="teardown" finished-at="2026-03-17T09:53:33 IST" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.automationlearn.tests.LoginTest -->
+    </test> <!-- SauceDemo Tests -->
+    <test started-at="2026-03-17T09:53:33 IST" name="The Internet Tests" finished-at="2026-03-17T09:54:03 IST" duration-ms="29473">
+      <class name="com.automationlearn.tests.TheInternetTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:33 IST" name="setup" finished-at="2026-03-17T09:53:36 IST" duration-ms="2688" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:33 IST" name="setup" finished-at="2026-03-17T09:53:36 IST" duration-ms="2691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:33 IST" name="setup" finished-at="2026-03-17T09:53:36 IST" duration-ms="2695" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testConfirmAccept()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:36 IST" name="testConfirmAccept" description="Accept confirm alert" finished-at="2026-03-17T09:53:40 IST" duration-ms="4233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConfirmAccept -->
+        <test-method signature="testDropdownSelectByIndex()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:36 IST" name="testDropdownSelectByIndex" description="Select dropdown option by index" finished-at="2026-03-17T09:53:41 IST" duration-ms="4593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDropdownSelectByIndex -->
+        <test-method signature="testConfirmDismiss()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:36 IST" name="testConfirmDismiss" description="Dismiss confirm alert" finished-at="2026-03-17T09:53:41 IST" duration-ms="4782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConfirmDismiss -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:40 IST" name="teardown" finished-at="2026-03-17T09:53:41 IST" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:41 IST" name="setup" finished-at="2026-03-17T09:53:43 IST" duration-ms="2690" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:41 IST" name="teardown" finished-at="2026-03-17T09:53:41 IST" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:41 IST" name="teardown" finished-at="2026-03-17T09:53:41 IST" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:41 IST" name="setup" finished-at="2026-03-17T09:53:44 IST" duration-ms="2742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:41 IST" name="setup" finished-at="2026-03-17T09:53:44 IST" duration-ms="2526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDropdownSelectByText()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:43 IST" name="testDropdownSelectByText" description="Select dropdown option by visible text" finished-at="2026-03-17T09:53:49 IST" duration-ms="5477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDropdownSelectByText -->
+        <test-method signature="testDropdownSelectByValue()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:44 IST" name="testDropdownSelectByValue" description="Select dropdown option by value" finished-at="2026-03-17T09:53:48 IST" duration-ms="4157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDropdownSelectByValue -->
+        <test-method signature="testIFrame()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:44 IST" name="testIFrame" description="Type and read text inside iFrame" finished-at="2026-03-17T09:53:50 IST" duration-ms="6143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIFrame -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:48 IST" name="teardown" finished-at="2026-03-17T09:53:48 IST" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:48 IST" name="setup" finished-at="2026-03-17T09:53:50 IST" duration-ms="1956" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:49 IST" name="teardown" finished-at="2026-03-17T09:53:49 IST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:49 IST" name="setup" finished-at="2026-03-17T09:53:51 IST" duration-ms="1885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:50 IST" name="teardown" finished-at="2026-03-17T09:53:50 IST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="testNewWindow()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:50 IST" name="testNewWindow" description="Handle new browser window" finished-at="2026-03-17T09:53:54 IST" duration-ms="4195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNewWindow -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:50 IST" name="setup" finished-at="2026-03-17T09:53:52 IST" duration-ms="1689" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPromptAlert()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:51 IST" name="testPromptAlert" description="Type text in prompt alert" finished-at="2026-03-17T09:53:55 IST" duration-ms="4276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPromptAlert -->
+        <test-method signature="testSimpleAlert()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:52 IST" name="testSimpleAlert" description="Handle simple JS alert" finished-at="2026-03-17T09:53:56 IST" duration-ms="4178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSimpleAlert -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:54 IST" name="teardown" finished-at="2026-03-17T09:53:55 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:55 IST" name="setup" finished-at="2026-03-17T09:53:56 IST" duration-ms="1560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:55 IST" name="teardown" finished-at="2026-03-17T09:53:56 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="testSwitchBackToOriginal()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:56 IST" name="testSwitchBackToOriginal" description="Verify original window after switching back" finished-at="2026-03-17T09:54:02 IST" duration-ms="6344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSwitchBackToOriginal -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:53:56 IST" name="teardown" finished-at="2026-03-17T09:53:56 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.TheInternetTest@7bedc48a]" started-at="2026-03-17T09:54:02 IST" name="teardown" finished-at="2026-03-17T09:54:03 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.automationlearn.tests.TheInternetTest -->
+    </test> <!-- The Internet Tests -->
+    <test started-at="2026-03-17T09:54:03 IST" name="DemoQA Tests" finished-at="2026-03-17T09:54:24 IST" duration-ms="21056">
+      <class name="com.automationlearn.tests.DemoQATest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.DemoQATest@37ceb1df]" started-at="2026-03-17T09:54:03 IST" name="setup" finished-at="2026-03-17T09:54:05 IST" duration-ms="2654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.DemoQATest@37ceb1df]" started-at="2026-03-17T09:54:03 IST" name="setup" finished-at="2026-03-17T09:54:05 IST" duration-ms="2643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.DemoQATest@37ceb1df]" started-at="2026-03-17T09:54:03 IST" name="setup" finished-at="2026-03-17T09:54:05 IST" duration-ms="2646" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCheckBox()[pri:0, instance:com.automationlearn.tests.DemoQATest@37ceb1df]" started-at="2026-03-17T09:54:05 IST" name="testCheckBox" description="Check Home checkbox and verify result" finished-at="2026-03-17T09:54:13 IST" duration-ms="7634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckBox -->
+        <test-method signature="testWebTableAddRecord()[pri:0, instance:com.automationlearn.tests.DemoQATest@37ceb1df]" started-at="2026-03-17T09:54:05 IST" name="testWebTableAddRecord" description="Add new record and verify in table" finished-at="2026-03-17T09:54:23 IST" duration-ms="17991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWebTableAddRecord -->
+        <test-method signature="testTextBoxForm()[pri:0, instance:com.automationlearn.tests.DemoQATest@37ceb1df]" started-at="2026-03-17T09:54:05 IST" name="testTextBoxForm" description="Fill and submit text box form" finished-at="2026-03-17T09:54:12 IST" duration-ms="6954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTextBoxForm -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.DemoQATest@37ceb1df]" started-at="2026-03-17T09:54:12 IST" name="teardown" finished-at="2026-03-17T09:54:13 IST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.DemoQATest@37ceb1df]" started-at="2026-03-17T09:54:13 IST" name="setup" finished-at="2026-03-17T09:54:14 IST" duration-ms="1573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.DemoQATest@37ceb1df]" started-at="2026-03-17T09:54:13 IST" name="teardown" finished-at="2026-03-17T09:54:13 IST" duration-ms="404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="testWebTableSearch()[pri:0, instance:com.automationlearn.tests.DemoQATest@37ceb1df]" started-at="2026-03-17T09:54:14 IST" name="testWebTableSearch" description="Search record in web table" finished-at="2026-03-17T09:54:18 IST" duration-ms="3635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWebTableSearch -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.DemoQATest@37ceb1df]" started-at="2026-03-17T09:54:18 IST" name="teardown" finished-at="2026-03-17T09:54:18 IST" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.DemoQATest@37ceb1df]" started-at="2026-03-17T09:54:23 IST" name="teardown" finished-at="2026-03-17T09:54:24 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.automationlearn.tests.DemoQATest -->
+    </test> <!-- DemoQA Tests -->
+    <test started-at="2026-03-17T09:54:24 IST" name="OrangeHRM Tests" finished-at="2026-03-17T09:55:14 IST" duration-ms="49721">
+      <class name="com.automationlearn.tests.OrangeHRMTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.OrangeHRMTest@7dc0f706]" started-at="2026-03-17T09:54:24 IST" name="setup" finished-at="2026-03-17T09:54:27 IST" duration-ms="2709" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.OrangeHRMTest@7dc0f706]" started-at="2026-03-17T09:54:24 IST" name="setup" finished-at="2026-03-17T09:54:27 IST" duration-ms="2755" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.OrangeHRMTest@7dc0f706]" started-at="2026-03-17T09:54:24 IST" name="setup" finished-at="2026-03-17T09:54:27 IST" duration-ms="2715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin()[pri:0, instance:com.automationlearn.tests.OrangeHRMTest@7dc0f706]" started-at="2026-03-17T09:54:27 IST" name="testLogin" description="Login to OrangeHRM" finished-at="2026-03-17T09:54:43 IST" duration-ms="16036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testAddEmployee()[pri:0, instance:com.automationlearn.tests.OrangeHRMTest@7dc0f706]" started-at="2026-03-17T09:54:27 IST" name="testAddEmployee" description="Add new employee" finished-at="2026-03-17T09:54:59 IST" duration-ms="32892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddEmployee -->
+        <test-method signature="testLogout()[pri:0, instance:com.automationlearn.tests.OrangeHRMTest@7dc0f706]" started-at="2026-03-17T09:54:27 IST" name="testLogout" description="Logout from OrangeHRM" finished-at="2026-03-17T09:55:01 IST" duration-ms="33922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.OrangeHRMTest@7dc0f706]" started-at="2026-03-17T09:54:43 IST" name="teardown" finished-at="2026-03-17T09:54:43 IST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.automationlearn.tests.OrangeHRMTest@7dc0f706]" started-at="2026-03-17T09:54:43 IST" name="setup" finished-at="2026-03-17T09:54:44 IST" duration-ms="1556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSearchEmployee()[pri:0, instance:com.automationlearn.tests.OrangeHRMTest@7dc0f706]" started-at="2026-03-17T09:54:44 IST" name="testSearchEmployee" description="Search existing employee" finished-at="2026-03-17T09:55:13 IST" duration-ms="28597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchEmployee -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.OrangeHRMTest@7dc0f706]" started-at="2026-03-17T09:54:59 IST" name="teardown" finished-at="2026-03-17T09:55:00 IST" duration-ms="618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.OrangeHRMTest@7dc0f706]" started-at="2026-03-17T09:55:01 IST" name="teardown" finished-at="2026-03-17T09:55:01 IST" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationlearn.tests.OrangeHRMTest@7dc0f706]" started-at="2026-03-17T09:55:13 IST" name="teardown" finished-at="2026-03-17T09:55:14 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.automationlearn.tests.OrangeHRMTest -->
+    </test> <!-- OrangeHRM Tests -->
+  </suite> <!-- Automation Suite -->
+</testng-results>
