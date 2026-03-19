@@ -24,7 +24,18 @@ public class ConfigReader {
     }
 
     public static String getBrowser()          { return properties.getProperty("browser"); }
-    public static boolean isHeadless()         { return Boolean.parseBoolean(properties.getProperty("headless")); }
+ //   public static boolean isHeadless()         { return Boolean.parseBoolean(properties.getProperty("headless")); }
+    public static boolean isHeadless() {
+        // Check system property first
+        // CI/CD passes: -Dheadless=true
+        String sysHeadless = System.getProperty("headless");
+        if (sysHeadless != null && !sysHeadless.isEmpty()) {
+            return Boolean.parseBoolean(sysHeadless);
+        }
+        // Fall back to config.properties
+        return Boolean.parseBoolean(
+            properties.getProperty("headless"));
+    }
     public static int getImplicitWait()        { return Integer.parseInt(properties.getProperty("implicit.wait")); }
     public static int getExplicitWait()        { return Integer.parseInt(properties.getProperty("explicit.wait")); }
     public static int getPageLoadTimeout()     { return Integer.parseInt(properties.getProperty("page.load.timeout")); }

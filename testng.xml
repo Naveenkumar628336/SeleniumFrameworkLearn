@@ -3,10 +3,34 @@
 
 <suite name="Automation Suite" verbose="1">
 
+    <listeners>
+        <listener class-name=
+            "com.automationlearn.listeners.TestListener"/>
+    </listeners>
+
+    <!-- Cucumber Tests -->
     <test name="Cucumber BDD Tests">
         <classes>
             <class name=
                 "com.automationlearn.runners.TestRunner"/>
+        </classes>
+    </test>
+
+    <!-- SauceDemo Tests -->
+    <test name="SauceDemo Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name=
+                "com.automationlearn.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- Data Driven Tests -->
+    <test name="Data Driven Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name=
+                "com.automationlearn.tests.DataDrivenTest"/>
         </classes>
     </test>
 

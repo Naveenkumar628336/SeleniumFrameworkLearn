@@ -54,19 +54,25 @@ public class DriverManager {
 			driver = new EdgeDriver(edgeopts);
 			break;
 		case "chrome":
-			default:
-			WebDriverManager.chromedriver().setup();
-			ChromeOptions opts = new ChromeOptions();
-			if (headless) {
-                opts.addArguments("--headless=new");
-                opts.addArguments("--no-sandbox");
-                opts.addArguments("--disable-dev-shm-usage");
-            }
-            opts.addArguments("--start-maximized");
-            opts.addArguments("--disable-notifications");
-			driver = new ChromeDriver(opts);
-			break;
-		
+		default:
+		    WebDriverManager.chromedriver().setup();
+		    ChromeOptions opts = new ChromeOptions();
+
+		    if (ConfigReader.isHeadless()) {
+		        // Headless settings for CI/CD server
+		        opts.addArguments("--headless=new");
+		        opts.addArguments("--no-sandbox");
+		        opts.addArguments("--disable-dev-shm-usage");
+		        opts.addArguments("--disable-gpu");
+		        opts.addArguments("--window-size=1920,1080");
+		        // Required for CI servers
+		        opts.addArguments("--remote-allow-origins=*");
+		    }
+
+		    opts.addArguments("--start-maximized");
+		    opts.addArguments("--disable-notifications");
+		    driver = new ChromeDriver(opts);
+		    break;		
 		} 
         
         // Apply timeout settings from config
